@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="shot.css"></head>
+<body>
+<div class="stage">
+  <div class="copy">
+    <div class="badge"><img src="../../icons/icon128.png" alt="">Show Password on Hover</div>
+    <h1>マウスを乗せるだけで<br>パスワードが見える</h1>
+    <p>パスワード欄にカーソルを合わせると、<br>入力中の文字を<em>その場で確認</em>できます。</p>
+  </div>
+  <div class="window">
+    <div class="chrome-bar"><i></i><i></i><i></i><div class="url">https://example.com/login</div></div>
+    <div class="page">
+      <div class="form">
+        <h2>ログイン</h2>
+        <div class="field"><label>メールアドレス</label><input type="email" value="hanako@example.com"></div>
+        <div class="field"><label>パスワード</label><input id="pw" class="hot" type="password" value="Sunflower-2026!"></div>
+        <div class="btn">ログイン</div>
+      </div>
+      <svg class="cursor" style="left:440px;top:300px" viewBox="0 0 26 34"><path d="M2 2 L2 28 L9 21 L14 32 L19 30 L14 19 L24 19 Z" fill="#111" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+    </div>
+  </div>
+</div>
+<!-- 拡張機能の実コードを読み込み、ホバーを発火させて実際の挙動で撮影する -->
+<script src="../../content.js"></script>
+<script>document.getElementById('pw').dispatchEvent(new MouseEvent('mouseover', {bubbles: true}));</script>
+</body></html>

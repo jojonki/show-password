@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="shot.css">
+<style>
+  .pair { display: flex; flex-direction: column; gap: 44px; width: 420px; }
+  .pair .field { margin: 0; }
+  .pair .tag { right: 0; top: -4px; }
+</style></head>
+<body>
+<div class="stage">
+  <div class="copy">
+    <div class="badge"><img src="../../icons/icon128.png" alt="">Show Password on Hover</div>
+    <h1>離せば、すぐ<br>元どおり非表示に</h1>
+    <p>カーソルが欄から外れると<br>自動で<em>伏せ字に戻ります</em>。<br>ボタン操作も設定も不要です。</p>
+  </div>
+  <div class="window">
+    <div class="chrome-bar"><i></i><i></i><i></i><div class="url">https://example.com/signup</div></div>
+    <div class="page">
+      <div class="pair">
+        <div class="field">
+          <span class="tag on">ホバー中</span>
+          <label>パスワード</label>
+          <input id="a" class="hot" type="password" value="Sunflower-2026!">
+          <svg class="cursor" style="left:250px;top:44px" viewBox="0 0 26 34"><path d="M2 2 L2 28 L9 21 L14 32 L19 30 L14 19 L24 19 Z" fill="#111" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="field">
+          <span class="tag off">カーソルを離すと</span>
+          <label>パスワード</label>
+          <input id="b" type="password" value="Sunflower-2026!">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../content.js"></script>
+<script>
+  // a はホバー状態、b はホバー→離脱を経た状態を実コードで再現
+  const b = document.getElementById('b');
+  document.getElementById('a').dispatchEvent(new MouseEvent('mouseover', {bubbles: true}));
+  b.dispatchEvent(new MouseEvent('mouseover', {bubbles: true}));
+  b.dispatchEvent(new MouseEvent('mouseout', {bubbles: true}));
+</script>
+</body></html>
