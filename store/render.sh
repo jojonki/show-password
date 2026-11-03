@@ -27,6 +27,8 @@ done
 shot store/src/shot1.html store/screenshots/1-hover-reveal-1280x800.png 1280 800
 shot store/src/shot2.html store/screenshots/2-auto-hide-1280x800.png 1280 800
 shot store/src/shot3.html store/screenshots/3-privacy-1280x800.png 1280 800
+shot store/src/login-before.html store/screenshots/4-login-before-1280x800.png 1280 800
+shot store/src/login-after.html store/screenshots/5-login-after-1280x800.png 1280 800
 shot store/src/promo.html store/promo-small-440x280.png 440 280
 
 # 解像度チェック

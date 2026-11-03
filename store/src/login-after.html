@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="login.css"></head>
+<body>
+<div class="tabs">
+  <div class="dots"><i></i><i></i><i></i></div>
+  <div class="tab"><span class="fav"></span>ログイン | Nijimo<span class="x">✕</span></div>
+  <div class="tab bg">新しいタブ</div>
+</div>
+<div class="toolbar">
+  <span>←</span><span>→</span><span>↻</span>
+  <div class="omni">
+    <svg class="lock" viewBox="0 0 12 14"><rect x="1" y="6" width="10" height="7.5" rx="1.5" fill="#5F6368"/><path d="M3.2 6V4.3a2.8 2.8 0 0 1 5.6 0V6" fill="none" stroke="#5F6368" stroke-width="1.6"/></svg>
+    <span>nijimo.example<span class="path">/login</span></span>
+  </div>
+  <img class="ext" src="../../icons/icon48.png" alt="">
+  <span class="avatar"></span>
+</div>
+<div class="site">
+  <div class="blob a"></div><div class="blob b"></div>
+  <header>
+    <div class="logo"><span class="mark"></span>Nijimo</div>
+    <nav><span>サービス</span><span>料金</span><span>ヘルプ</span></nav>
+    <span class="signup">無料で始める</span>
+  </header>
+  <div class="card">
+    <h1>おかえりなさい</h1>
+    <p class="sub">アカウントにログインしてください</p>
+    <div class="field"><label>メールアドレス</label><input type="email" value="hanako@example.com"></div>
+    <div class="field"><label>パスワード</label><input id="pw" class="hot" type="password" value="Sunflower-2026!"></div>
+    <div class="row"><span class="keep"><span class="box"></span>ログイン状態を保持する</span><a>パスワードをお忘れですか？</a></div>
+    <div class="btn">ログイン</div>
+    <p class="foot">アカウントをお持ちでない方は <b>新規登録</b></p>
+  </div>
+  <!-- カーソルをパスワード欄に乗せた状態 -->
+  <svg class="cursor" style="left:700px;top:384px" viewBox="0 0 26 34"><path d="M2 2 L2 28 L9 21 L14 32 L19 30 L14 19 L24 19 Z" fill="#111" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+</div>
+<script src="../../content.js"></script>
+<!-- 拡張機能の実コードにホバーを発火させ、実際の挙動で撮影する -->
+<script>document.getElementById("pw").dispatchEvent(new MouseEvent("mouseover", {bubbles: true}));</script>
+</body></html>
