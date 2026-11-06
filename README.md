@@ -37,3 +37,7 @@ A Chrome extension that shows a password field's contents while you hover over i
 ## プライバシー / Privacy
 
 [PRIVACY.md](PRIVACY.md) を参照してください / See [PRIVACY.md](PRIVACY.md).
+
+## ライセンス / License
+
+[MIT](LICENSE)
